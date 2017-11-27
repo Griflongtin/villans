@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: normal 100% Cambria, Georgia, serif;
+}
+span{
+  font-style: italic;
+  margin-left: 10px;
+}
+.logo{
+  position: relative;
+}
+.baker{
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.button{
+  text-transform: uppercase;
+  text-align: center;
+  width: 125px;
+}
+.picture-card{
+  border-radius: 7px;
+}
+@media screen and (min-width:600px){
+  .logo-that-is-to-small {
+    display: none
+  }
+  .button p:nth-child(2){
+    font-weight: bold;
+  }
+  .button p:nth-child(1){
+    font-size: 10px;
+  }
+  .nav{
+    float:left;
+  }
+}
+@media screen and (max-width:599px){
+  .logo {
+    display: none;
+  }
+  .button{
+    margin: 2%;
+    border-bottom: solid grey;
+  }
+  .button p{
+    font-size: 10px;
+  }
+  body{
+    padding: 3%;
+  }
+  .center {
+    text-align: center;
+  }
+  .nav {
+    margin: 2%;
+    border-top: solid grey;
+    display:inline-flex;
+  }
+
+  .body, .logo-that-is-to-small{
+    clear: both;
+  }
+  h3{
+    text-align: center;
+    margin: 10px;
+  }
+}
