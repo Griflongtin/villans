@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
 }
-body {
+body{
   font: normal 100% Cambria, Georgia, serif;
+  background-color: lightgrey;
 }
 span{
   font-style: italic;
   margin-left: 10px;
 }
+
 .logo{
   position: relative;
 }
@@ -23,8 +25,8 @@ span{
   text-align: center;
   width: 125px;
 }
-.picture-card{
-  border-radius: 7px;
+.picture-card img{
+  border-radius: 5px;
 }
 @media screen and (min-width:600px){
   .logo-that-is-to-small {
@@ -62,12 +64,26 @@ span{
     border-top: solid grey;
     display:inline-flex;
   }
-
-  .body, .logo-that-is-to-small{
-    clear: both;
+  .picture-card img{
+    max-width: 130px;
+  }
+  .picture-card {
+    float: left;
+    margin: 21px;
+    text-align: center;
+  }
+  .picture-card p{
+    text-transform: uppercase;
+  }
+  .picture-container{
+    display: table;
+  }
+  h5{
+    text-align: center;
   }
   h3{
     text-align: center;
     margin: 10px;
+    text-transform: uppercase;
   }
 }
